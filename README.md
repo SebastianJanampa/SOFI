@@ -1,5 +1,6 @@
 # SOFI
  ========
+ 
 This repository contains the official code and pretrained models for **SOFI** (multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries)
 
 
