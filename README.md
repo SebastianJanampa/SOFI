@@ -6,7 +6,7 @@ This repository contains the official code and pretrained models for **SOFI** (m
 
 ## Installation
 
-<details>
+<installation>
 1. Clone this repository.
    ```
    git clone https://github.com/SebastianJanampa/SOFI.git
@@ -33,4 +33,18 @@ This repository contains the official code and pretrained models for **SOFI** (m
    python test.py
    cd ../../..
    ```
-</details>
+</installation>
+
+## Training Dataset
+
+* [Google Street View dataset](https://drive.google.com/file/d/1o_831g-3NDnhR94MEwDS2MFvAwpGmVXN/view?usp=share_link)
+  * Download and unzip.
+  
+## RUN 
+
+<1. Training>
+```sh
+bash scripts/train/#model_name
+```
+We support training for SOFI, CTRL-C and MSCC
+</1. Training>
