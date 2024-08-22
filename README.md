@@ -40,7 +40,7 @@ This repository contains the official code and pretrained models for **SOFI** (m
    ```sh
    mkdir dataset data_csv
    ```
-* [Google Street View dataset](https://drive.google.com/file/d/1o_831g-3NDnhR94MEwDS2MFvAwpGmVXN/view?usp=share_link)
+* Please download [Google Street View dataset](https://drive.google.com/file/d/1o_831g-3NDnhR94MEwDS2MFvAwpGmVXN/view?usp=share_link), [Horizon Line in the Wild (HLW)](https://mvrl.cse.wustl.edu/datasets/hlw/) datasets and organize them as following:
 ```
 SOFI/
 ├── data/
@@ -61,4 +61,17 @@ bash scripts/train/#model_name
 ```
 We support training for SOFI, CTRL-C and MSCC
 
+2. Testing
+
+## Citation
+If you use this code for your research, please cite our paper:
+
+```sh
+@InProceedings{Janampa_BMVC2024,
+    Title     = {{SOFI: Multi-Scale Deformable Transformer for Camera Calibration with Enhanced Line Queries}},
+    Author    = {Sebastian Janampa Student and Marios Pattichis},    
+    Booktitle = {35th British Machine Vision Conference 2025, {BMVC} 2025, Glasgow, UK, November 25-28, 2024},
+    Year      = {2024},
+}
+   ```
 
