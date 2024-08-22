@@ -57,11 +57,20 @@ SOFI/
 
 1. Training
 ```sh
-bash scripts/train/#model_name
+bash scripts/train/model_name.sh 
 ```
 We support training for SOFI, CTRL-C and MSCC
 
 2. Testing
+```sh
+bash scripts/train/model_name.sh dataset
+```
+Supported datasets: gsv, hlw and holicity
+
+3. Compute metrics
+```sh
+bash results.py --dataset dataset
+```
 
 ## Citation
 If you use this code for your research, please cite our paper:
