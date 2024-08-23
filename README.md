@@ -1,5 +1,4 @@
 # SOFI
- ========
  
 This repository contains the official code and pretrained models for **SOFI** (multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries)
 
@@ -20,13 +19,15 @@ This repository contains the official code and pretrained models for **SOFI** (m
 
 ### Holicity Dataset (Testing)
 |Model| Up Dir (◦) | Pitch (◦) | Roll (◦) | FoV (◦) | AUC (%) |
+| --- | --- | --- | --- | --- | --- | --- |
 **Ours** 
 |CTRL-C | 2.66 | 2.26 | 1.09 | 3.38 | 72.31 | 
 |MSCC| 2.28 | 1.87 | 1.08 | 1.08 | 77.43 |
 |SOFI| 2.23 | 1.75 | 1.16 | 1.16 | 82.96 |
 
 ### Horizon Line in the Wild  Dataset (Testing)
-|Model| AUC (%) 
+|Model| AUC (%) |
+| --- | --- |
 **Ours** 
 |CTRL-C | 46.37 | 
 |MSCC| 47.28 |
