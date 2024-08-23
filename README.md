@@ -19,7 +19,7 @@ This repository contains the official code and pretrained models for **SOFI** (m
 
 ### Holicity Dataset (Testing)
 |Model| Up Dir (◦) | Pitch (◦) | Roll (◦) | FoV (◦) | AUC (%) |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 **Ours** 
 |CTRL-C | 2.66 | 2.26 | 1.09 | 3.38 | 72.31 | 
 |MSCC| 2.28 | 1.87 | 1.08 | 1.08 | 77.43 |
