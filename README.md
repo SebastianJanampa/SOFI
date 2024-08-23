@@ -3,6 +3,35 @@
  
 This repository contains the official code and pretrained models for **SOFI** (multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries)
 
+<img src="figs/architecture.png" alt="Model Architecture"/><img src="figs/architecture.png" alt="Model Architecture"/>
+
+## Results & Checkpoints
+
+### Google Street View Dataset (Training)
+|Model| Up Dir (◦) | Pitch (◦) | Roll (◦) | FoV (◦) | AUC (%) | URL |
+| --- | --- | --- | --- | --- | --- | --- |
+**Official Implementation**
+|CTRL-C | 1.80 | 1.58 | 0.66 | 3.59 | 87.29 | 
+|MSCC| 1.72 | 1.50 | 0.62 | 3.21 |
+**Ours** 
+|CTRL-C | 1.71 | 1.52 | 0.57 | 3.38 | 87.16 | 
+|MSCC| 1.75 | 1.56 | 0.58 | 3.04 | 87.63 |
+|SOFI| 1.64 | 1.51 | 0.54 | 3.09 | 87.87 |
+
+### Holicity Dataset (Testing)
+|Model| Up Dir (◦) | Pitch (◦) | Roll (◦) | FoV (◦) | AUC (%) |
+**Ours** 
+|CTRL-C | 2.66 | 2.26 | 1.09 | 3.38 | 72.31 | 
+|MSCC| 2.28 | 1.87 | 1.08 | 1.08 | 77.43 |
+|SOFI| 2.23 | 1.75 | 1.16 | 1.16 | 82.96 |
+
+### Horizon Line in the Wild  Dataset (Testing)
+|Model| AUC (%) 
+**Ours** 
+|CTRL-C | 46.37 | 
+|MSCC| 47.28 |
+|SOFI| 49.69 |
+
 
 ## Installation
 
