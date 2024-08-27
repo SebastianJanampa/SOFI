@@ -65,7 +65,7 @@ This repository contains the official code and pretrained models for **SOFI** (m
    cd ../../..
    ```
 
-## Training Dataset
+## Dataset
 
    ```sh
    mkdir dataset data_csv

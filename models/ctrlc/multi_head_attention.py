@@ -2,7 +2,6 @@ from typing import Tuple, Optional
 
 import torch
 from torch import Tensor
-from torch.nn.modules.linear import  _LinearWithBias
 from torch.nn.init import xavier_uniform_
 from torch.nn.init import constant_
 from torch.nn.init import xavier_normal_
@@ -12,7 +11,12 @@ from torch.nn import Module
 import torch.nn.functional as F
 from torch.overrides import (
     has_torch_function, handle_torch_function)
-
+    
+from packaging.version import Version
+if Version(torch.__version__) < Version('1.9.0'):
+    from torch.nn.modules.linear import  _LinearWithBias
+else:
+    from torch.nn.modules.linear import NonDynamicallyQuantizableLinear as _LinearWithBias
 
 class MultiheadAttention(Module):
     bias_k: Optional[torch.Tensor]
