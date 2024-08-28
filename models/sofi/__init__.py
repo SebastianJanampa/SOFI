@@ -9,4 +9,8 @@
 from .sofi import build
 def build_model(args):
     return build(args)
-    
+
+from .sofi import SOFI
+from .backbone import Backbone, Joiner
+from .deformable_transformer import DeformableTransformer  
+from .position_encoding import PositionEmbeddingSine, PositionEmbeddingLearned
