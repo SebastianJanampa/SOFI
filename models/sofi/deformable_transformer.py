@@ -118,8 +118,6 @@ class DeformableTransformer(nn.Module):
         hs, inter_references = self.decoder(tgt, reference_points, memory,
                                             spatial_shapes, level_start_index, valid_ratios, query_pos, 
                                             mask_flatten, tgt_key_padding_mask)
-        quit()
-
 
         inter_references_out = inter_references
         
@@ -257,7 +255,6 @@ class DeformableTransformerDecoderLayer(nn.Module):
         tgt = self.norm2(tgt)
 
         # cross attention
-        print(reference_points.shape, 'decoder layer')
         tgt2 = self.cross_attn(self.with_pos_embed(tgt, query_pos),
                                reference_points,
                                src, src_spatial_shapes, level_start_index, src_padding_mask)
