@@ -3,6 +3,8 @@
  
 This repository contains the official code and pretrained models for **SOFI** (multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries)
 
+Camera calibration consists on estimating the camera parameters such as the zenith vanishing point, and horizon line. In addition to this, estimating the camera parameters allows other tasks like 3D rendering, artificial reality effects and, object insertion in an image. Transformer-based model have provided promising results; however, they lack of cross-scale interaction. In this work, we introduce \textit{multi-Scale defOrmable transFormer for camera calibratIon with enhanced line queries}, SOFI. SOFI improves the line queries used in CTRL-C and MSCC by using both line content and line geometric features. Moreover, SOFI's line queries allows transformer models to adopt the multi-scale deformable attention mechanism to promote cross-scale interaction between the feature maps produced by the backbone. SOFI outperforms existing methods on the \textit {Google Street View}, \textit {Horizon Line in the Wild}, and \textit {Holicity} datasets while keeping a competitive inference speed.
+
 <img src="figs/architecture.png" alt="Model Architecture"/>
 
 ## Results & Checkpoints
@@ -16,7 +18,7 @@ This repository contains the official code and pretrained models for **SOFI** (m
 **Ours** 
 |CTRL-C | 1.71 | 1.52 | 0.57 | 3.38 | 87.16 | 
 |MSCC| 1.75 | 1.56 | 0.58 | 3.04 | 87.63 |
-|SOFI| 1.64 | 1.51 | 0.54 | 3.09 | 87.87 |
+|SOFI| 1.64 | 1.51 | 0.54 | 3.09 | 87.87 | link(!)
 
 ### Holicity Dataset (Testing)
 |Model| Up Dir (◦) | Pitch (◦) | Roll (◦) | FoV (◦) | AUC (%) |
