@@ -1,5 +1,5 @@
 # SOFI
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_DQL0uT9i2nJHRlTXZrEHzkAwCbO6DRq#scrollTo=oCfbMY4W7PMU) [![arXiv](https://img.shields.io/badge/arXiv-2108.03144-b31b1b.svg?style=plastic)](TODO)  [![Project Page](https://badgen.net/badge/color/project/green?icon=awesome&label)](TODO)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_DQL0uT9i2nJHRlTXZrEHzkAwCbO6DRq#scrollTo=oCfbMY4W7PMU) [![arXiv](https://img.shields.io/badge/arXiv-2108.03144-b31b1b.svg?style=plastic)](TODO) 
  
 This repository contains the official code and pretrained models for **SOFI** (multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries)
 
