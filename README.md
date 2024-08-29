@@ -1,5 +1,5 @@
 # SOFI
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_DQL0uT9i2nJHRlTXZrEHzkAwCbO6DRq#scrollTo=oCfbMY4W7PMU) [![arXiv](https://img.shields.io/badge/arXiv-2108.03144-b31b1b.svg?style=plastic)](TODO) 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SebastianJanampa/SOFI/blob/main/online_demo.ipynb) [![arXiv](https://img.shields.io/badge/arXiv-2108.03144-b31b1b.svg?style=plastic)](TODO) 
  
 This repository contains the official code and pretrained models for **SOFI** (multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries)
 
@@ -18,7 +18,7 @@ Camera calibration consists on estimating the camera parameters such as the zeni
 **Ours** 
 |CTRL-C | 1.71 | 1.52 | 0.57 | 3.38 | 87.16 | 
 |MSCC| 1.75 | 1.56 | 0.58 | 3.04 | 87.63 |
-|SOFI| 1.64 | 1.51 | 0.54 | 3.09 | 87.87 | [link](!https://www.dropbox.com/scl/fi/1dwdn9sepyyj818ri5ml9/sofi.pth?rlkey=zwldsnj0vk7tb8px4hid2xwf8&st=s7uq8s2n&dl=0)
+|SOFI| 1.64 | 1.51 | 0.54 | 3.09 | 87.87 | [!link](https://www.dropbox.com/scl/fi/1dwdn9sepyyj818ri5ml9/sofi.pth?rlkey=zwldsnj0vk7tb8px4hid2xwf8&st=s7uq8s2n&dl=0)
 
 ### Holicity Dataset (Testing)
 |Model| Up Dir (◦) | Pitch (◦) | Roll (◦) | FoV (◦) | AUC (%) |
