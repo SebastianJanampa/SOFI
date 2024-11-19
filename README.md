@@ -3,7 +3,7 @@
  
 This repository contains the official code and pretrained models for **SOFI** (multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries)
 
-Camera calibration consists on estimating the camera parameters such as the zenith vanishing point, and horizon line. In addition to this, estimating the camera parameters allows other tasks like 3D rendering, artificial reality effects and, object insertion in an image. Transformer-based model have provided promising results; however, they lack of cross-scale interaction. In this work, we introduce multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries, SOFI. SOFI improves the line queries used in CTRL-C and MSCC by using both line content and line geometric features. Moreover, SOFI's line queries allows transformer models to adopt the multi-scale deformable attention mechanism to promote cross-scale interaction between the feature maps produced by the backbone. SOFI outperforms existing methods on the *Google Street View*, *Horizon Line in the Wild*, and *Holicity* datasets while keeping a competitive inference speed.
+Camera calibration estimates the camera parameters, such as the zenith vanishing point and horizon line. In addition, estimating the camera parameters allows other tasks like 3D rendering, artificial reality effects, and object insertion in an image. Transformer-based models have provided promising results; however, they lack cross-scale interaction. In this work, we introduce multi-**S**cale def**O**rmable trans**F**ormer for camera calibrat**I**on with enhanced line queries, SOFI. SOFI improves the line queries used in CTRL-C and MSCC by using line content and geometric features. Moreover, SOFI's line queries allow transformer models to adopt the multi-scale deformable attention mechanism to promote cross-scale interaction between the feature maps produced by the backbone. SOFI outperforms existing methods on the *Google Street View*, *Horizon Line in the Wild*, and *Holicity* datasets while keeping a competitive inference speed.
 
 <img src="figs/architecture.png" alt="Model Architecture"/>
 
@@ -48,7 +48,7 @@ Camera calibration consists on estimating the camera parameters such as the zeni
 
 2. Install Pytorch and torchvision
 
-   Follow the instruction on https://pytorch.org/get-started/locally/.
+   Follow the instructions on https://pytorch.org/get-started/locally/.
    ```sh
    # an example:
    conda install -c pytorch pytorch torchvision
@@ -90,13 +90,12 @@ SOFI/
 
 1. Training
 ```sh
-bash scripts/train/model_name.sh 
+bash scripts/train/sofi.sh 
 ```
-We support training for SOFI, CTRL-C and MSCC
 
 2. Testing
 ```sh
-bash scripts/train/model_name.sh dataset
+bash scripts/train/sofi.sh dataset
 ```
 Supported datasets: gsv, hlw and holicity
 
