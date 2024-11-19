@@ -61,7 +61,7 @@ Camera calibration estimates the camera parameters, such as the zenith vanishing
       
 4. Compiling CUDA operators
    ```sh
-   cd models/dino/ops
+   cd models/sofi/ops
    python setup.py build install
    # unit test (should see all checking is True)
    python test.py
@@ -73,7 +73,7 @@ Camera calibration estimates the camera parameters, such as the zenith vanishing
    ```sh
    mkdir dataset data_csv
    ```
-* Please download [Google Street View dataset](https://drive.google.com/file/d/1o_831g-3NDnhR94MEwDS2MFvAwpGmVXN/view?usp=share_link), [Horizon Line in the Wild (HLW)](https://mvrl.cse.wustl.edu/datasets/hlw/) datasets and organize them as following:
+* Please download [Google Street View dataset](https://drive.google.com/file/d/1o_831g-3NDnhR94MEwDS2MFvAwpGmVXN/view?usp=share_link), [Horizon Line in the Wild (HLW)](https://mvrl.cse.wustl.edu/datasets/hlw/) , and [Holicity](https://holicity.io/) datasets and organize them as following:
 ```
 SOFI/
 ├── data/
@@ -82,9 +82,19 @@ SOFI/
 │    └── holicity
 │    
 └── data_csv/
-     ├── gsv_train_20210313
-     └── gsv_test_20210313
+     ├── gsv_train_20210313.csv
+     ├── gsv_val_20210313.csv
+     ├── gsv_test_20210313.csv
+     ├── hlw_test.csv
+     ├── holicity-test-split.csv
+     └── gsv_train_20210313
 ```
+For Holicity, you need to download the files: image, camera, vanishing points.
+
+* Then, run the following command
+  ```sh
+  python scripts/dataset/extract_segments.py
+  ```
 
 ## RUN 
 
