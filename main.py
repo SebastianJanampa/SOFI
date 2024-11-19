@@ -45,11 +45,7 @@ def main(args):
     random.seed(seed)
 
     # Model
-    assert args.model in ['sofi', 'ctrlc', 'mscc']
-    if args.model == 'sofi':
-        model, criterion = build_model(args)
-    else:
-        model, criterion = build_ctrlc(args)
+    model, criterion = build_model(args)
     model.to(device)
 
     model_without_ddp = model

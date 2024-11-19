@@ -6,3 +6,5 @@ output*/
 .ipynb_checkpoints/
 *.so
 .vscode/
+tools*/
+
