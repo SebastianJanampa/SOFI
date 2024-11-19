@@ -110,9 +110,7 @@ class HoliCityDataset(Dataset):
         with open(self.listpath) as txtfile:
             target_files = txtfile.read().split('\n')
             target_len = len(target_files[0])
-
-        with open(osp.join(self.basepath, 'split/filelist.txt')) as txtfile:
-            for filename in txtfile.read().split('\n'):
+            for filename in target_files:
                 if len(filename) == 0 or filename[:target_len] not in target_files:
                     continue
                 camr = np.load(osp.join(self.basepath, 'geo/', filename + '_camr.npz'))
@@ -264,10 +262,10 @@ def make_transform():
     ]) 
 
 def build_holicity(image_set, args):
-    root = './data/holicity/'
+    root = 'data/holicity/'
 
     if image_set == 'test':
-        ann_file = osp.join(root, 'split/test-split.csv')
+        ann_file = 'data_csv/holicity-test-split.csv'
     else:
         raise Exception('unsupported image set: {}'.format(image_set))
 

@@ -24,7 +24,7 @@ from util import test_with_aux, test, test_hlw
 #import datasets.samplers as samplers
 from datasets import * #build_gsv_dataset, build_hlw_dataset, build_holicity_dataset
 from engine import evaluate, train_one_epoch
-from models import build_model, build_ctrlc, build_ctrlcplus
+from models import build_model
 
 from args import get_args_parser
 
