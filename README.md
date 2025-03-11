@@ -18,7 +18,7 @@ Camera calibration estimates the camera parameters, such as the zenith vanishing
 **Ours** 
 |CTRL-C | 1.71 | 1.52 | 0.57 | 3.38 | 87.16 | 
 |MSCC| 1.75 | 1.56 | 0.58 | 3.04 | 87.63 |
-|SOFI| 1.64 | 1.51 | 0.54 | 3.09 | 87.87 | [!link](https://www.dropbox.com/scl/fi/1dwdn9sepyyj818ri5ml9/sofi.pth?rlkey=zwldsnj0vk7tb8px4hid2xwf8&st=s7uq8s2n&dl=0)
+|SOFI| 1.64 | 1.51 | 0.54 | 3.09 | 87.87 | [checkpoint](https://github.com/SebastianJanampa/SOFI/releases/download/checkpoints/sofi.pth)
 
 ### Holicity Dataset (Testing)
 |Model| Up Dir (◦) | Pitch (◦) | Roll (◦) | FoV (◦) | AUC (%) |
